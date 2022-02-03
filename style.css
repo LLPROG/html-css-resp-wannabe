@@ -1,0 +1,180 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  html {
+    font-size: 1.8em;
+  }
+
+  .container {
+    min-width: 992px;
+    background-color: #f2f2cd;
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 1em;
+    margin-top: 10px;
+
+
+  }
+
+  img {
+    margin-top: 0.7rem;
+  }
+
+  hr {
+    border:1px solid black;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 80%;
+    float: none;
+  }
+
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+  float: none;
+  width: 80%;
+  }
+
+ 
+  #why .row {
+  background-color: #f2f2cd ;
+  padding:0.5em ;
+}
+
+#why .row img {
+
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+  /* transform: scale(0.8); */
+}
+
+#why .third img {
+  border: 0.7rem solid #428bca;
+}
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  html {
+    font-size: 3em;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 90%;
+    float: none;
+  }
+
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+  float: none;
+  width: 90%;
+  }
+
+  #why .third img {
+    border: 0.5rem solid #428bca;
+  }
+
+}
